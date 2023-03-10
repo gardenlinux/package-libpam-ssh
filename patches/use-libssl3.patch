@@ -1,0 +1,12 @@
+diff -Naur debian.orig/control debian/control
+--- a/debian/control	2023-03-10 13:11:26.424662597 +0100
++++ b/debian/control	2023-03-10 13:12:32.824663561 +0100
+@@ -5,7 +5,7 @@
+ Rules-Requires-Root: no
+ Build-Depends:
+  debhelper-compat (= 13), libtool,
+- libssl-dev (>= 1.1.1),
++ libssl-dev (>= 3.0.8),
+  libpam0g-dev,
+  openssh-client | ssh-client
+ Standards-Version: 4.6.0
