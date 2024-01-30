@@ -1,0 +1,8 @@
+git_src --branch upstream/2.3+ds https://salsa.debian.org/debian/libpam-ssh.git
+(
+	tmp_dir="$(mktemp -d)"
+	trap 'cd / && rm -rf "$tmp_dir"' EXIT
+
+	git clone --depth 1 --branch debian/2.3+ds-6 https://salsa.debian.org/debian/libpam-ssh.git "$tmp_dir"
+	cp -r "$tmp_dir/debian" "$dir/src/"
+)
