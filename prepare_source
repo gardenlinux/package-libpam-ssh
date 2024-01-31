@@ -6,3 +6,4 @@ git_src --branch upstream/2.3+ds https://salsa.debian.org/debian/libpam-ssh.git
 	git clone --depth 1 --branch debian/2.3+ds-6 https://salsa.debian.org/debian/libpam-ssh.git "$tmp_dir"
 	cp -r "$tmp_dir/debian" "$dir/src/"
 )
+version_suffix=gardenlinux0
